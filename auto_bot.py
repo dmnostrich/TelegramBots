@@ -15,7 +15,15 @@ RSS_FEEDS = [
     "https://www.cshub.com/rss/articles",
     "https://www.securityweek.com/rss.xml",
     "https://www.scmagazine.com/home/feed/",
-    "https://www.infosecurity-magazine.com/rss/news/"
+    "https://www.infosecurity-magazine.com/rss/news/",
+    "https://www.welivesecurity.com/feed/",
+    "https://www.securitymagazine.com/rss",
+    "https://www.ncsc.gov.uk/information/rss-feeds",
+    "https://msrc.microsoft.com/blog/rss/",
+    "https://www.cybercom.mil/RSS/",
+    "https://www.cisecurity.org/feed/advisories",
+    "https://www.reddit.com/r/cybersecurity/.rss",
+    "https://www.reddit.com/r/netsec/.rss"
 ]
 
 # Initialize Telegram Bot
