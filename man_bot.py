@@ -1,11 +1,9 @@
 import requests
 import feedparser
-import schedule
-import time
 from telegram import Bot
 
 TELEGRAM_BOT_TOKEN = "##BOT_TOKNE_HERE##"
-TELEGRAM_CHANNEL_ID = "@CHANNEL_ID_HERE"  #OR "-100XXXXXXXXXX"
+TELEGRAM_CHANNEL_ID = "@CHANNEL_ID_HERE"  # OR "-100XXXXXXXXXX"
 
 # List of Cybersecurity News RSS Feeds
 RSS_FEEDS = [
@@ -41,10 +39,7 @@ def send_telegram_message(message):
     response = requests.post(url, data=data)
     print("News sent!", response.json())
 
-# Schedule the bot to post news every 2 hours
-schedule.every(2).hours.do(fetch_news)
-
-print("Cybersecurity News Bot is running...")
-while True:
-    schedule.run_pending()
-    time.sleep(60)
+if __name__ == "__main__":
+    print("Fetching latest cybersecurity news...")
+    fetch_news()
+    print("Execution completed.")
